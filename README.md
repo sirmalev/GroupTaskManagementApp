@@ -17,7 +17,8 @@ A full-stack mobile application for collaborative task management, developed as 
 <p align="center">
   <a href="#-app-preview">App Preview</a> •
   <a href="#-key-features">Key Features</a> •
-  <a href="#-tech-stack--architecture">Tech Stack & Architecture</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-architecture">Architecture</a> •
   <a href="#-setup--installation">Setup</a> •
   <a href="#-full-documentation">Full Documentation</a> •
   <a href="#-contact">Contact</a>
@@ -45,35 +46,36 @@ A full-stack mobile application for collaborative task management, developed as 
 
 ---
 
-## 🛠️ Tech Stack & Architecture
-This project was built with a modern and scalable tech stack:
+## 🛠️ Tech Stack
+This project was built using the following technologies:
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
-<br/>
+---
 
-The application follows a client-server architecture designed with the **MVC (Model-View-Controller)** pattern to ensure a clear separation of concerns. The Flutter client communicates directly with Google's Firebase services for real-time data synchronization, authentication, and other backend functionalities.
+## 🏗️ Architecture
+The application follows a client-server architecture designed with the **MVC (Model-View-Controller)** pattern. The Flutter client communicates directly with Google's Firebase services for real-time data synchronization, authentication, and other backend functionalities.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0740abbc-03c2-4c12-be6c-9eea26dab1ea" alt="DFD-0 Diagram" width="512">
-  <img src="https://github.com/user-attachments/assets/15c77c38-7464-4266-b802-35d1e2a04548" alt="Deployment Diagram" width="700">
+  <img src="https://github.com/user-attachments/assets/0740abbc-03c2-4c12-be6c-9eea26dab1ea" alt="DFD-0 Diagram" width="512">
+  <img src="https://github.com/user-attachments/assets/15c77c38-7464-4266-b802-35d1e2a04548" alt="Deployment Diagram" width="700">
 </p>
 
 ---
 
-## 📖 Full Documentation
-For a complete and detailed overview of the project, including the full technical specification, system analysis, and design diagrams, please see the [**Full Project Book (PDF)**](https://github.com/sirmalev/GroupTaskManagementApp/blob/main/Project%20Book.pdf).
-
----
-
 ## ⚙️ Setup & Installation
-To run this project locally, follow these simple steps:
+To run this project locally, you will first need to set up your own Firebase project and then follow the installation steps.
 
+### Prerequisites (Firebase Setup)
+1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+2. In your new project, enable **Authentication** (with the Email/Password sign-in method) and the **Firestore Database**.
+3. Register your Android/iOS app with the Firebase project.
+4. Download the Firebase configuration file (`google-services.json` for Android) and place it in the correct directory (`android/app/`).
+
+### Installation
 1.  **Clone the repository**
     ```bash
     git clone [https://github.com/sirmalev/GroupTaskManagementApp.git](https://github.com/sirmalev/GroupTaskManagementApp.git)
@@ -91,6 +93,11 @@ To run this project locally, follow these simple steps:
     flutter run
     ```
     *You will need to have the Flutter SDK installed on your machine.*
+
+---
+
+## 📖 Full Documentation
+For a complete and detailed overview of the project, including the full technical specification and design diagrams, please see the [**Full Project Book (PDF)**](https://github.com/sirmalev/GroupTaskManagementApp/blob/main/Project%20Book.pdf).
 
 ---
 
